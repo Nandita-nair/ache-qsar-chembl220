@@ -1,0 +1,40 @@
+{
+  "package_version": "1.0.0",
+  "target": "CHEMBL220",
+  "target_label": "human AChE",
+  "chembl_version": "unknown",
+  "timestamp_utc": "2026-11-10T05:34:58+00:00",
+  "python": "3.13.11",
+  "rdkit": "2026.09.1",
+  "scikit_learn": "1.9.1",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "seed": 42,
+  "cv_folds": 5,
+  "fast_mode": false,
+  "feature_sets": [
+    "rdkit",
+    "ecfp4"
+  ],
+  "curation": {
+    "raw_records": 10079,
+    "after_relation_units_assay_filter": 7646,
+    "after_missing_value_filter": 7644,
+    "after_standardisation": 7643,
+    "unique_compounds_before_replicate_filter": 6021,
+    "compounds_with_replicates": 633,
+    "unique_compounds_final": 5920,
+    "class_counts": {
+      "active": 2757,
+      "intermediate": 1717,
+      "inactive": 1446
+    }
+  },
+  "split": {
+    "split": "scaffold",
+    "n_train": 4736,
+    "n_test": 1184,
+    "scaffolds_shared_between_train_and_test": 0
+  },
+  "runtime_minutes": 66.2
+}

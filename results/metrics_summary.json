@@ -1,0 +1,136 @@
+{
+  "selected": {
+    "classification": {
+      "model": "RandomForest",
+      "feature_set": "ecfp4",
+      "best_params": "{\"max_depth\": null, \"max_features\": \"sqrt\", \"min_samples_leaf\": 1}",
+      "metrics": {
+        "roc_auc": 0.9375200983637568,
+        "pr_auc": 0.9605885758094865,
+        "balanced_accuracy": 0.8517765377218702,
+        "mcc": 0.6938281445003814,
+        "f1": 0.8681672025723473,
+        "precision": 0.9040178571428571,
+        "recall": 0.8350515463917526,
+        "accuracy": 0.8485221674876847
+      },
+      "ci95": {
+        "roc_auc": [
+          0.9224574180977633,
+          0.9511000427822938
+        ],
+        "pr_auc": [
+          0.9496465380797111,
+          0.9705101274109437
+        ],
+        "balanced_accuracy": [
+          0.8280961153991343,
+          0.8756461858247572
+        ],
+        "mcc": [
+          0.6462722847302216,
+          0.7409773223550172
+        ],
+        "f1": [
+          0.8446315985503589,
+          0.889601195073105
+        ],
+        "precision": [
+          0.8763557483731019,
+          0.9296712018140589
+        ],
+        "recall": [
+          0.8028578197982715,
+          0.8656798507462686
+        ],
+        "accuracy": [
+          0.8250923645320197,
+          0.8719211822660099
+        ]
+      },
+      "y_randomization": {
+        "metric": "ROC-AUC",
+        "real": 0.9375200983637568,
+        "scrambled_mean": 0.488440051704026,
+        "scrambled_max": 0.5450360982376493,
+        "n": 20
+      }
+    },
+    "regression": {
+      "model": "RandomForest",
+      "feature_set": "ecfp4",
+      "best_params": "{\"max_features\": 0.3, \"min_samples_leaf\": 1}",
+      "metrics": {
+        "r2": 0.6516517962452423,
+        "rmse": 0.9473645378883274,
+        "mae": 0.6603423630335539,
+        "pearson_r": 0.8180089279207428,
+        "spearman_rho": 0.7692497784945607
+      },
+      "ci95": {
+        "r2": [
+          0.6030829196670235,
+          0.6898714301925893
+        ],
+        "rmse": [
+          0.8756435985689366,
+          1.028704747335971
+        ],
+        "mae": [
+          0.6218576843708284,
+          0.7009509421596939
+        ],
+        "pearson_r": [
+          0.7847928079737504,
+          0.8449500296477199
+        ],
+        "spearman_rho": [
+          0.7413124578407894,
+          0.7943286327783843
+        ]
+      },
+      "y_randomization": {
+        "metric": "R2",
+        "real": 0.6516517962452423,
+        "scrambled_mean": -0.13201311200482763,
+        "scrambled_max": -0.04830302802153352,
+        "n": 20
+      }
+    }
+  },
+  "applicability_domain": [
+    {
+      "similarity": "<0.4",
+      "n": 130,
+      "rmse": 0.9273384170645751
+    },
+    {
+      "similarity": "0.4-0.6",
+      "n": 277,
+      "rmse": 1.0436752905600726
+    },
+    {
+      "similarity": "0.6-0.8",
+      "n": 448,
+      "rmse": 0.8859287243757091
+    },
+    {
+      "similarity": "\u22650.8",
+      "n": 329,
+      "rmse": 0.9509218262699928
+    }
+  ],
+  "importance_model": "HistGradientBoosting",
+  "top_descriptors": [
+    "BalabanJ",
+    "fr_pyridine",
+    "BCUT2D_LOGPLOW",
+    "PEOE_VSA7",
+    "MaxPartialCharge",
+    "SMR_VSA5",
+    "MinEStateIndex",
+    "SlogP_VSA10",
+    "MinAbsPartialCharge",
+    "VSA_EState2"
+  ]
+}
